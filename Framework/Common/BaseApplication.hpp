@@ -1,7 +1,7 @@
 #pragma once
 #include "../Interface/IApplication.hpp"
 
-namespace My {
+namespace CFT {
 	class BaseApplication : implements IApplication
 	{
 	public:

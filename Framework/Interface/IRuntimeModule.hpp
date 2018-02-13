@@ -2,7 +2,7 @@
 
 #include "Interface.hpp"
 
-namespace My {
+namespace CFT {
 	Interface IRuntimeModule{
 public:
 	virtual ~IRuntimeModule() {};

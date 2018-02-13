@@ -1,7 +1,7 @@
 #pragma once
 #include "IRuntimeModule.hpp"
 
-namespace My {
+namespace CFT {
 	Interface IApplication : implements IRuntimeModule
 	{
 	public:
