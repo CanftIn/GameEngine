@@ -5,6 +5,23 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
 {
     switch(message)
     {
+        case WM_PAINT:
+        {
+            PAINTSTRUCT ps;
+            HDC hdc = BeginPaint(hWnd, &ps);
+            HGDIOBJ original = NULL;
+            RECT rect = { 10, 10, 200, 300 };
+            original = SelectObject(hdc,GetStockObject(DC_PEN));
+            SelectObject(hdc, GetStockObject(BLACK_PEN));
+            SelectObject(hdc, GetStockObject(DC_PEN));
+            SelectObject(hdc, GetStockObject(DC_BRUSH));
+            SetDCBrushColor(hdc, RGB(255,0,0));
+            SetDCPenColor(hdc, RGB(0,0,255));
+            SetDCBrushColor(hdc, RGB(0,255,0));
+            Rectangle(hdc,300,150,500,300);
+            EndPaint(hWnd, &ps);
+        }
+        break;
         case WM_DESTROY:
         {
             PostQuitMessage(0);

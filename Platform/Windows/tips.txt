@@ -1,2 +1,9 @@
 Compile with clang:
-> clang -l user32.lib -o helloengin_win.exe helloworld_win.c
+> clang -l user32.lib -l gdi32.lib -o helloengin_win.exe helloworld_win.c
+
+Compile with gcc:
+error!!! not solve
+> gcc -l user32.lib -l gdi32.lib -o helloengin_win.exe helloworld_win.c
+
+Compile with cl:
+> cl user32.lib gdi32.lib helloworld_win.c
