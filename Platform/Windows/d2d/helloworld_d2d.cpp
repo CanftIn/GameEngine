@@ -90,15 +90,15 @@ int WINAPI WinMain(HINSTANCE hInstance,
     wc.hInstance = hInstance;
     wc.hCursor = LoadCursor(nullptr, IDC_ARROW);
     wc.hbrBackground = (HBRUSH)COLOR_WINDOW;
-    wc.lpszClassName = _T("WindowClass1");
+    wc.lpszClassName = _T("WindowClass");
 
     // register the window class
     RegisterClassEx(&wc);
 
     // create the window and use the result as the handle
     hWnd = CreateWindowEx(0,
-                          _T("WindowClass1"),    // name of the window class
-                          _T("Hello, Engine![Direct 2D]"),   // title of the window
+                          _T("WindowClass"),    // name of the window class
+                          _T("Windows_d2d"),   // title of the window
                           WS_OVERLAPPEDWINDOW,    // window style
                           100,    // x-position of the window
                           100,    // y-position of the window

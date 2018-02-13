@@ -51,7 +51,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
     RegisterClassEx(&wc);
 
-    hWnd = CreateWindowEx(0, _T("WindowClass"), _T("Our First Windowed Program"),
+    hWnd = CreateWindowEx(0, _T("WindowClass"), _T("Windows_win"),
      WS_OVERLAPPEDWINDOW, 300, 300, 500, 400, NULL, NULL, hInstance, NULL);
     
     ShowWindow(hWnd, nCmdShow);
