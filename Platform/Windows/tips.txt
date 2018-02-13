@@ -1,0 +1,2 @@
+Compile with clang:
+> clang -l user32.lib -o helloengin_win.exe helloworld_win.c
