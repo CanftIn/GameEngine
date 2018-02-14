@@ -1,7 +1,7 @@
 #include "BaseApplication.hpp"
 
 // Parse command line, read configuration, initialize all sub modules
-int CFT::BaseApplication::Initialize()
+int CAN::BaseApplication::Initialize()
 {
 	m_bQuit = false;
 
@@ -10,17 +10,17 @@ int CFT::BaseApplication::Initialize()
 
 
 // Finalize all sub modules and clean up all runtime temporary files.
-void CFT::BaseApplication::Finalize()
+void CAN::BaseApplication::Finalize()
 {
 }
 
 
 // One cycle of the main loop
-void CFT::BaseApplication::Tick()
+void CAN::BaseApplication::Tick()
 {
 }
 
-bool CFT::BaseApplication::IsQuit()
+bool CAN::BaseApplication::IsQuit()
 {
 	return m_bQuit;
 }

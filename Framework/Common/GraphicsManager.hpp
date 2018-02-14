@@ -1,7 +1,7 @@
 #pragma once
 #include "../Interface/IRuntimeModule.hpp"
 
-namespace CFT {
+namespace CAN {
 	class GraphicsManager : implements IRuntimeModule
 	{
 	public:

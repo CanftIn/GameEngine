@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "../Interface/IApplication.hpp"
 
-using namespace CFT;
+using namespace CAN;
 
-namespace CFT {
+namespace CAN {
         extern IApplication* g_pApp;
 }
 
